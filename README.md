@@ -33,11 +33,11 @@ Not on the Marketplace yet. Build and install from source:
 ```bash
 git clone https://github.com/MyNameStartsWithG/Claude-Threads-by-Guven.git
 cd Claude-Threads-by-Guven
-npx @vscode/vsce package
-code --install-extension claude-threads-by-guven-*.vsix
+npm run package
+code --install-extension claude-threads-by-guven-0.2.0.vsix
 ```
 
-Then run **Developer: Reload Window** and open a project folder. There is no build step; to hack on it, open the folder in VS Code and press `F5`.
+Then run **Developer: Reload Window** and open a project folder. `npm run package` needs Node.js and downloads [`@vscode/vsce`](https://github.com/microsoft/vscode-vsce) on first use; there are no other dependencies. To hack on the code, open the folder in VS Code and press `F5`.
 
 ## How it works
 
@@ -78,7 +78,7 @@ Its own records live in the project:
 
 ## Contributing
 
-Issues and pull requests are welcome. The guide figures are generated: edit `docs/images/build.js` and run `node docs/images/build.js`.
+Issues and pull requests are welcome. The guide figures are generated: edit `docs/images/build.js` and run `npm run figures`.
 
 ## License
 

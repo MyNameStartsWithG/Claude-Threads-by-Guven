@@ -15,6 +15,10 @@
   "engines": { "vscode": "^1.90.0" },
   "categories": ["Other"],
   "main": "./extension.js",
+  "scripts": {
+    "package": "node scripts/package.js",
+    "figures": "node docs/images/build.js"
+  },
   "activationEvents": ["onStartupFinished"],
   "contributes": {
     "viewsContainers": {

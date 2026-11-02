@@ -3,3 +3,5 @@
 .gitignore
 .github/**
 docs/images/build.js
+scripts/**
+README.md

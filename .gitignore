@@ -3,3 +3,4 @@ node_modules/
 .claude-threads/
 .playwright-mcp/
 docs/images/_preview.html
+.vsix-readme.md
