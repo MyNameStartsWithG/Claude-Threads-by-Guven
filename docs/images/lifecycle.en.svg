@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 324" width="760" role="img" aria-label="A thread moves between Open and Done" font-size="13">
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .ink{fill:#1f2328}.quiet{fill:#59636e}.edge{stroke:#8c959f}.edgef{fill:#8c959f}.grid{stroke:#d1d9e0}
+  .acc{stroke:#0969da}.accf{fill:#0969da}.tint{fill:#eff2f5}.sel{fill:#0969da;fill-opacity:.12}
+  @media (prefers-color-scheme: dark){
+    .ink{fill:#f0f6fc}.quiet{fill:#9198a1}.edge{stroke:#656c76}.edgef{fill:#656c76}.grid{stroke:#3d444d}
+    .acc{stroke:#4493f8}.accf{fill:#4493f8}.tint{fill:#151b23}.sel{fill:#4493f8;fill-opacity:.18}
+  }
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="edgef"/></marker></defs>
+<text x="24" y="34" font-size="15" font-weight="600" class="ink">A thread moves between Open and Done</text>
+<rect x="188" y="64" width="352" height="208" rx="8" class="sel"/>
+<rect x="188" y="64" width="352" height="208" rx="8" fill="none" class="acc" stroke-width="2"/>
+<text x="204" y="88" font-weight="600" class="ink">Open</text>
+<path d="M156 176H188" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)"/>
+<path d="M340 160L396 134" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M340 192L396 218" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M540 176H600" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)"/>
+<path d="M668 212V300H364V272" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)"/>
+<rect x="24" y="140" width="132" height="72" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="90" y="164" text-anchor="middle" font-weight="600" class="ink">New thread</text>
+<text x="90" y="180" text-anchor="middle" font-size="11.5" class="quiet">Ctrl+Shift+Alt+N</text>
+<text x="90" y="196" text-anchor="middle" font-size="11.5" class="quiet">name it, it starts</text>
+<rect x="204" y="140" width="136" height="72" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="272" y="164" text-anchor="middle" font-weight="600" class="ink">open</text>
+<text x="272" y="180" text-anchor="middle" font-size="11.5" class="quiet">terminal open,</text>
+<text x="272" y="196" text-anchor="middle" font-size="11.5" class="quiet">waiting for you</text>
+<rect x="396" y="96" width="128" height="72" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="460" y="120" text-anchor="middle" font-weight="600" class="ink">working</text>
+<text x="460" y="136" text-anchor="middle" font-size="11.5" class="quiet">Claude is</text>
+<text x="460" y="152" text-anchor="middle" font-size="11.5" class="quiet">writing</text>
+<rect x="396" y="184" width="128" height="72" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="460" y="208" text-anchor="middle" font-weight="600" class="ink">idle</text>
+<text x="460" y="224" text-anchor="middle" font-size="11.5" class="quiet">tab closed;</text>
+<text x="460" y="240" text-anchor="middle" font-size="11.5" class="quiet">click to resume</text>
+<rect x="600" y="140" width="136" height="72" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="668" y="164" text-anchor="middle" font-weight="600" class="ink">Done</text>
+<text x="668" y="180" text-anchor="middle" font-size="11.5" class="quiet">transcript moves</text>
+<text x="668" y="196" text-anchor="middle" font-size="11.5" class="quiet">to the done folder</text>
+<text x="570" y="166" text-anchor="middle" font-size="11.5" class="quiet">✓ close</text>
+<text x="516" y="292" text-anchor="middle" font-size="11.5" class="quiet">↻ reopen</text>
+</svg>

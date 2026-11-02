@@ -1,0 +1,5 @@
+*.vsix
+.vscode/**
+.gitignore
+.github/**
+docs/images/build.js

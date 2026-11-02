@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 324" width="760" role="img" aria-label="Konuşma Claude'un dosyasında kalır, eklenti okunabilir kopyasını yazar" font-size="13">
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .ink{fill:#1f2328}.quiet{fill:#59636e}.edge{stroke:#8c959f}.edgef{fill:#8c959f}.grid{stroke:#d1d9e0}
+  .acc{stroke:#0969da}.accf{fill:#0969da}.tint{fill:#eff2f5}.sel{fill:#0969da;fill-opacity:.12}
+  @media (prefers-color-scheme: dark){
+    .ink{fill:#f0f6fc}.quiet{fill:#9198a1}.edge{stroke:#656c76}.edgef{fill:#656c76}.grid{stroke:#3d444d}
+    .acc{stroke:#4493f8}.accf{fill:#4493f8}.tint{fill:#151b23}.sel{fill:#4493f8;fill-opacity:.18}
+  }
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="edgef"/></marker></defs>
+<text x="24" y="34" font-size="15" font-weight="600" class="ink">Konuşma Claude'un dosyasında kalır, eklenti okunabilir kopyasını yazar</text>
+<rect x="24" y="152" width="232" height="88" rx="8" class="tint"/>
+<rect x="24" y="152" width="232" height="88" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="40" y="176" font-weight="600" class="ink">Claude Code oturum dosyası</text>
+<text x="40" y="192" font-size="11.5" class="quiet">~/.claude/projects/</text>
+<text x="40" y="208" font-size="11.5" class="quiet">&lt;proje&gt;/&lt;oturum-id&gt;.jsonl</text>
+<text x="40" y="224" font-size="11.5" class="quiet">eklenti buna yalnız bakar</text>
+<rect x="352" y="64" width="384" height="236" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="368" y="88" font-weight="600" class="ink">.claude-threads</text>
+<text x="490" y="88" font-size="11.5" class="quiet">proje klasörünün içinde</text>
+<rect x="368" y="104" width="352" height="56" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="384" y="128" font-weight="600" class="ink">durum.json</text>
+<text x="384" y="144" font-size="11.5" class="quiet">hangi thread açık, hangisi bitti, adları</text>
+<rect x="368" y="192" width="160" height="72" rx="8" class="sel"/>
+<rect x="368" y="192" width="160" height="72" rx="8" fill="none" class="acc" stroke-width="2"/>
+<text x="384" y="216" font-weight="600" class="ink">acik/</text>
+<text x="384" y="232" font-size="11.5" class="quiet">açık thread'lerin</text>
+<text x="384" y="248" font-size="11.5" class="quiet">.md dökümleri</text>
+<rect x="560" y="192" width="160" height="72" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<text x="576" y="216" font-weight="600" class="ink">biten/</text>
+<text x="576" y="232" font-size="11.5" class="quiet">kapatılanların</text>
+<text x="576" y="248" font-size="11.5" class="quiet">.md dökümleri</text>
+<path d="M256 228H368" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)"/>
+<path d="M528 216H560" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)"/>
+<path d="M560 244H528" fill="none" class="edge" stroke-width="1.25" marker-end="url(#arrow)"/>
+<text x="304" y="218" text-anchor="middle" font-size="11.5" class="quiet">her cevaptan</text>
+<text x="304" y="246" text-anchor="middle" font-size="11.5" class="quiet">~4 sn sonra</text>
+<text x="544" y="286" text-anchor="middle" font-size="11.5" class="quiet">✓ kapatınca biten/'e taşınır · ↻ yeniden açınca geri gelir</text>
+</svg>

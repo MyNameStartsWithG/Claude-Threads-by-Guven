@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 348" width="760" role="img" aria-label="Open threads on top, finished ones below" font-size="13">
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .ink{fill:#1f2328}.quiet{fill:#59636e}.edge{stroke:#8c959f}.edgef{fill:#8c959f}.grid{stroke:#d1d9e0}
+  .acc{stroke:#0969da}.accf{fill:#0969da}.tint{fill:#eff2f5}.sel{fill:#0969da;fill-opacity:.12}
+  @media (prefers-color-scheme: dark){
+    .ink{fill:#f0f6fc}.quiet{fill:#9198a1}.edge{stroke:#656c76}.edgef{fill:#656c76}.grid{stroke:#3d444d}
+    .acc{stroke:#4493f8}.accf{fill:#4493f8}.tint{fill:#151b23}.sel{fill:#4493f8;fill-opacity:.18}
+  }
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="edgef"/></marker></defs>
+<text x="24" y="34" font-size="15" font-weight="600" class="ink">Open threads on top, finished ones below</text>
+<rect x="24" y="56" width="432" height="248" rx="8" fill="none" class="edge" stroke-width="1.25"/>
+<path d="M32 56H64V304H32a8 8 0 0 1 -8 -8V64a8 8 0 0 1 8 -8z" class="tint"/>
+<line x1="64" y1="92" x2="456" y2="92" class="grid"/>
+<rect x="34" y="70" width="20" height="20" rx="4" fill="none" class="edge"/>
+<rect x="34" y="106" width="20" height="20" rx="4" fill="none" class="edge"/>
+<rect x="24" y="140" width="3" height="24" class="accf"/>
+<rect x="34" y="142" width="20" height="20" rx="4" class="sel"/><rect x="34" y="142" width="20" height="20" rx="4" fill="none" class="acc" stroke-width="2"/>
+<path d="M38 147h9v6h-5l-3 3v-3h-1z" fill="none" class="acc" stroke-width="1.25"/>
+<text x="76" y="78" font-size="11" font-weight="600" class="quiet">CLAUDE THREADS</text>
+<text x="352" y="80" text-anchor="middle" font-size="16" class="ink">+</text>
+<text x="378" y="80" text-anchor="middle" font-size="16" class="ink">≡</text>
+<text x="404" y="80" text-anchor="middle" font-size="14" class="ink">↻</text>
+<path d="M422 68h5l2 2h7v9h-14z" fill="none" class="edge" stroke-width="1.25"/>
+<path d="M76 109l4 4l4 -4" fill="none" class="edge" stroke-width="1.25"/>
+<text x="90" y="116" font-size="12" font-weight="600" class="ink">Open (3)</text>
+<rect x="65" y="126" width="390" height="28" class="sel"/>
+<circle cx="100" cy="140" r="5" fill="none" class="acc" stroke-width="1.5" stroke-dasharray="20 12"/>
+<text x="112" y="144" font-size="12" class="ink">Refactor auth module</text>
+<text x="414" y="144" text-anchor="end" font-size="11" class="quiet">working · just now</text>
+<path d="M424 140l4 4l8 -8" fill="none" class="edge" stroke-width="1.5"/>
+<rect x="94" y="163" width="12" height="10" rx="2" fill="none" class="edge" stroke-width="1.25"/><path d="M97 166l2 2l-2 2" fill="none" class="edge" stroke-width="1.25"/>
+<text x="112" y="172" font-size="12" class="ink">Write API docs</text>
+<text x="444" y="172" text-anchor="end" font-size="11" class="quiet">open · 2 h ago</text>
+<circle cx="100" cy="196" r="5" fill="none" class="edge" stroke-width="1.25"/>
+<text x="112" y="200" font-size="12" class="ink">Fix flaky tests</text>
+<text x="444" y="200" text-anchor="end" font-size="11" class="quiet">idle · 50 min ago</text>
+<path d="M76 225l4 4l4 -4" fill="none" class="edge" stroke-width="1.25"/>
+<text x="90" y="232" font-size="12" font-weight="600" class="ink">Done</text>
+<circle cx="100" cy="256" r="5" fill="none" class="edge" stroke-width="1.25"/><path d="M97.5 256l2 2l3.5 -3.5" fill="none" class="edge" stroke-width="1.25"/>
+<text x="112" y="260" font-size="12" class="ink">Migrate to Postgres</text>
+<text x="414" y="260" text-anchor="end" font-size="11" class="quiet">3 h ago</text>
+<text x="430" y="261" text-anchor="middle" font-size="14" class="ink">↻</text>
+<circle cx="100" cy="284" r="5" fill="none" class="edge" stroke-width="1.25"/><path d="M100 281v3h3" fill="none" class="edge" stroke-width="1.25"/>
+<text x="112" y="288" font-size="12" class="quiet">An older session</text>
+<g fill="none" class="edge" stroke-width="1"><path d="M456 76H474"/><path d="M462 128H468V210H462"/><path d="M468 168H474"/><path d="M462 244H468V298H462"/><path d="M468 270H474"/></g>
+<text x="480" y="72" font-weight="600" class="ink">Top buttons</text>
+<text x="480" y="90" font-size="11.5" class="quiet">+ new · ≡ switch · ↻ refresh · folder</text>
+<text x="480" y="136" font-weight="600" class="ink">Open threads</text>
+<text x="480" y="154" font-size="11.5" class="quiet">spinning ring: Claude is writing</text>
+<text x="480" y="170" font-size="11.5" class="quiet">terminal: waiting for you</text>
+<text x="480" y="186" font-size="11.5" class="quiet">empty circle: terminal closed</text>
+<text x="480" y="202" font-size="11.5" class="quiet">✓ appears on hover, closes it</text>
+<text x="480" y="252" font-weight="600" class="ink">Done threads</text>
+<text x="480" y="270" font-size="11.5" class="quiet">check circle: a closed thread</text>
+<text x="480" y="286" font-size="11.5" class="quiet">clock: session from before the extension</text>
+<text x="480" y="302" font-size="11.5" class="quiet">↻ appears on hover, reopens it</text>
+<text x="24" y="330" font-size="11.5" class="quiet">The highlighted bubble icon in the activity bar opens this panel.</text>
+</svg>

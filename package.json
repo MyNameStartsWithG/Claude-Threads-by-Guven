@@ -1,0 +1,118 @@
+{
+  "name": "claude-threads-by-guven",
+  "displayName": "%ext.displayName%",
+  "description": "%ext.description%",
+  "publisher": "guven",
+  "version": "0.2.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MyNameStartsWithG/Claude-Threads-by-Guven.git"
+  },
+  "bugs": { "url": "https://github.com/MyNameStartsWithG/Claude-Threads-by-Guven/issues" },
+  "homepage": "https://github.com/MyNameStartsWithG/Claude-Threads-by-Guven#readme",
+  "keywords": ["claude", "claude code", "threads", "sessions", "terminal"],
+  "engines": { "vscode": "^1.90.0" },
+  "categories": ["Other"],
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        { "id": "claudeThreads", "title": "%view.container%", "icon": "media/icon.svg" }
+      ]
+    },
+    "views": {
+      "claudeThreads": [
+        { "id": "claudeThreads.list", "name": "%view.list%" }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "claudeThreads.list",
+        "contents": "%view.welcome%",
+        "when": "workbenchState == empty"
+      }
+    ],
+    "commands": [
+      { "command": "claudeThreads.new", "title": "%cmd.new%", "category": "Claude Threads", "icon": "$(add)" },
+      { "command": "claudeThreads.switch", "title": "%cmd.switch%", "category": "Claude Threads", "icon": "$(list-selection)" },
+      { "command": "claudeThreads.closeCurrent", "title": "%cmd.closeCurrent%", "category": "Claude Threads" },
+      { "command": "claudeThreads.refresh", "title": "%cmd.refresh%", "category": "Claude Threads", "icon": "$(refresh)" },
+      { "command": "claudeThreads.openFolder", "title": "%cmd.openFolder%", "category": "Claude Threads", "icon": "$(folder-opened)" },
+      { "command": "claudeThreads.open", "title": "%cmd.open%", "category": "Claude Threads", "icon": "$(terminal)" },
+      { "command": "claudeThreads.close", "title": "%cmd.close%", "category": "Claude Threads", "icon": "$(check)" },
+      { "command": "claudeThreads.reopen", "title": "%cmd.reopen%", "category": "Claude Threads", "icon": "$(debug-restart)" },
+      { "command": "claudeThreads.rename", "title": "%cmd.rename%", "category": "Claude Threads", "icon": "$(edit)" },
+      { "command": "claudeThreads.showTranscript", "title": "%cmd.showTranscript%", "category": "Claude Threads", "icon": "$(file-text)" }
+    ],
+    "menus": {
+      "view/title": [
+        { "command": "claudeThreads.new", "when": "view == claudeThreads.list", "group": "navigation@1" },
+        { "command": "claudeThreads.switch", "when": "view == claudeThreads.list", "group": "navigation@2" },
+        { "command": "claudeThreads.refresh", "when": "view == claudeThreads.list", "group": "navigation@3" },
+        { "command": "claudeThreads.openFolder", "when": "view == claudeThreads.list", "group": "navigation@4" }
+      ],
+      "view/item/context": [
+        { "command": "claudeThreads.close", "when": "view == claudeThreads.list && viewItem == thread-acik", "group": "inline@1" },
+        { "command": "claudeThreads.reopen", "when": "view == claudeThreads.list && viewItem == thread-biten", "group": "inline@1" },
+        { "command": "claudeThreads.open", "when": "view == claudeThreads.list && viewItem =~ /^thread-/", "group": "1_main@1" },
+        { "command": "claudeThreads.close", "when": "view == claudeThreads.list && viewItem == thread-acik", "group": "1_main@2" },
+        { "command": "claudeThreads.reopen", "when": "view == claudeThreads.list && viewItem == thread-biten", "group": "1_main@2" },
+        { "command": "claudeThreads.rename", "when": "view == claudeThreads.list && viewItem =~ /^thread-/", "group": "2_other@1" },
+        { "command": "claudeThreads.showTranscript", "when": "view == claudeThreads.list && viewItem =~ /^thread-/", "group": "2_other@2" }
+      ],
+      "commandPalette": [
+        { "command": "claudeThreads.open", "when": "false" },
+        { "command": "claudeThreads.close", "when": "false" },
+        { "command": "claudeThreads.reopen", "when": "false" },
+        { "command": "claudeThreads.rename", "when": "false" },
+        { "command": "claudeThreads.showTranscript", "when": "false" }
+      ]
+    },
+    "keybindings": [
+      { "command": "claudeThreads.new", "key": "ctrl+shift+alt+n", "mac": "cmd+shift+alt+n" },
+      { "command": "claudeThreads.switch", "key": "ctrl+shift+alt+t", "mac": "cmd+shift+alt+t" },
+      { "command": "claudeThreads.closeCurrent", "key": "ctrl+shift+alt+w", "mac": "cmd+shift+alt+w" }
+    ],
+    "configuration": {
+      "title": "Claude Threads",
+      "properties": {
+        "claudeThreads.language": {
+          "type": "string",
+          "enum": ["auto", "en", "tr"],
+          "enumDescriptions": ["%cfg.language.auto%", "English", "Türkçe"],
+          "default": "auto",
+          "description": "%cfg.language%"
+        },
+        "claudeThreads.claudeCommand": {
+          "type": "string",
+          "default": "claude",
+          "description": "%cfg.claudeCommand%"
+        },
+        "claudeThreads.extraArgs": {
+          "type": "string",
+          "default": "",
+          "description": "%cfg.extraArgs%"
+        },
+        "claudeThreads.saveFolder": {
+          "type": "string",
+          "default": ".claude-threads",
+          "description": "%cfg.saveFolder%"
+        },
+        "claudeThreads.terminalLocation": {
+          "type": "string",
+          "enum": ["editor", "panel"],
+          "enumDescriptions": ["%cfg.terminalLocation.editor%", "%cfg.terminalLocation.panel%"],
+          "default": "editor",
+          "description": "%cfg.terminalLocation%"
+        },
+        "claudeThreads.showUntracked": {
+          "type": "boolean",
+          "default": true,
+          "description": "%cfg.showUntracked%"
+        }
+      }
+    }
+  }
+}
